@@ -49,30 +49,21 @@
         }
 
         .link {
-            padding: 20px;
-            text-align: left;
+            padding: 0;
             border-radius: 10px;
             text-decoration: none;
-            color: white;
-            font-size: 20px;
-            transition: all 0.3s ease;
-            position: relative;
-            display: flex;
-            align-items: center;
-            gap: 15px;
+            overflow: hidden;
+            display: block;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
         }
 
-        .link:nth-child(1) { background-color: #0088cc; } /* Telegram */
-        .link:nth-child(2) { background-color: #ff0000; } /* YouTube */
-        .link:nth-child(3) { background-color: #000000; } /* TikTok */
-        .link:nth-child(4) { background-color: #000000; } /* X */
-        .link:nth-child(5) { background-color: #000000; } /* OKX */
-        .link:nth-child(6) { background-color: #2c2c2c; } /* Bybit */
-        .link:nth-child(7) { background-color: #00c2ff; } /* Bitget */
-        .link:nth-child(8) { background-color: #1f1f1f; } /* Group */
+        .link img {
+            width: 100%;
+            display: block;
+        }
 
         .link:hover {
-            transform: translateY(-5px);
+            transform: scale(1.03);
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
             filter: brightness(1.2);
         }
@@ -80,29 +71,10 @@
         .menu {
             position: absolute;
             right: 10px;
-            top: 50%;
-            transform: translateY(-50%);
+            top: 10px;
             cursor: pointer;
             font-size: 20px;
             color: #aaa;
-        }
-
-        .app-icon {
-            width: 35px;
-            height: 35px;
-            background-size: cover;
-            background-position: center;
-            border-radius: 5px;
-            flex-shrink: 0;
-        }
-
-        .group-avatar {
-            width: 35px;
-            height: 35px;
-            border-radius: 5px;
-            background-size: cover;
-            background-position: center;
-            flex-shrink: 0;
         }
 
         .share-button {
@@ -144,36 +116,28 @@
 
     <div class="link-container">
         <a class="link" href="#" target="_blank">
-            <div class="app-icon" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg');"></div>
-            tài khoản Telegram chính chủ <span class="menu">⋮</span>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
         </a>
         <a class="link" href="#" target="_blank">
-            <div class="app-icon" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png');"></div>
-            YouTube <span class="menu">⋮</span>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">
         </a>
         <a class="link" href="#" target="_blank">
-            <div class="app-icon" style="background-image: url('https://i.imgur.com/2D64YV9.png');"></div>
-            Tài khoản TikTok <span class="menu">⋮</span>
+            <img src="https://i.imgur.com/2D64YV9.png" alt="TikTok">
         </a>
         <a class="link" href="#" target="_blank">
-            <div class="app-icon" style="background-image: url('https://i.imgur.com/xG8RsaR.png');"></div>
-            Tài khoản X của mình <span class="menu">⋮</span>
+            <img src="https://i.imgur.com/xG8RsaR.png" alt="X">
         </a>
         <a class="link" href="#" target="_blank">
-            <div class="app-icon" style="background-image: url('https://i.imgur.com/VKj7K1W.png');"></div>
-            Đăng kí sàn OKX <span class="menu">⋮</span>
+            <img src="https://i.imgur.com/VKj7K1W.png" alt="OKX">
         </a>
         <a class="link" href="#" target="_blank">
-            <div class="app-icon" style="background-image: url('https://i.imgur.com/QG9lVqv.png');"></div>
-            Đăng kí sàn Bybit <span class="menu">⋮</span>
+            <img src="https://i.imgur.com/QG9lVqv.png" alt="Bybit">
         </a>
         <a class="link" href="#" target="_blank">
-            <div class="app-icon" style="background-image: url('https://i.imgur.com/k3wAEbN.png');"></div>
-            Đăng kí sàn Bitget <span class="menu">⋮</span>
+            <img src="https://i.imgur.com/k3wAEbN.png" alt="Bitget">
         </a>
         <a class="link" href="#" target="_blank">
-            <div class="group-avatar" style="background-image: url('https://i.postimg.cc/Y09647gV/unnamed-1.png');"></div>
-            Nhóm ae Ckrypto <span class="menu">⋮</span>
+            <img src="https://i.postimg.cc/Y09647gV/unnamed-1.png" alt="Nhóm ae Ckrypto">
         </a>
     </div>
 
