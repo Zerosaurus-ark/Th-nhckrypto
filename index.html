@@ -49,18 +49,17 @@
         }
 
         .link {
-            padding: 15px;
-            text-align: center;
+            padding: 20px;
+            text-align: left;
             border-radius: 10px;
             text-decoration: none;
             color: white;
-            font-size: 18px;
+            font-size: 20px;
             transition: all 0.3s ease;
             position: relative;
             display: flex;
             align-items: center;
-            justify-content: center;
-            gap: 10px;
+            gap: 15px;
         }
 
         .link:nth-child(1) { background-color: #0088cc; } /* Telegram */
@@ -89,19 +88,21 @@
         }
 
         .app-icon {
-            width: 30px;
-            height: 30px;
+            width: 35px;
+            height: 35px;
             background-size: cover;
             background-position: center;
             border-radius: 5px;
+            flex-shrink: 0;
         }
 
         .group-avatar {
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            border-radius: 5px;
             background-size: cover;
             background-position: center;
+            flex-shrink: 0;
         }
 
         .share-button {
@@ -141,48 +142,40 @@
     <h1>thanhckrypto</h1>
     <p>Chia sẻ crypto, cày sự kiện, kiếm tiền cùng nhau!</p>
 
-  <div class="link-container">
-    <a class="link" href="#" target="_blank" style="background-color: #0088cc;">
-        <div class="app-icon" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg');"></div>
-        tài khoản Telegram chính chủ <span class="menu">⋮</span>
-    </a>
-
-    <a class="link" href="#" target="_blank" style="background-color: #ff0000;">
-        <div class="app-icon" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png');"></div>
-        YouTube <span class="menu">⋮</span>
-    </a>
-
-    <a class="link" href="#" target="_blank" style="background-color: #25f4ee;">
-        <div class="app-icon" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a9/TikTok_logo.svg');"></div>
-        Tài khoản TikTok <span class="menu">⋮</span>
-    </a>
-
-    <a class="link" href="#" target="_blank" style="background-color: #1da1f2;">
-        <div class="app-icon" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023.svg');"></div>
-        Tài khoản X của mình <span class="menu">⋮</span>
-    </a>
-
-    <a class="link" href="#" target="_blank" style="background-color: #000000;">
-        <div class="app-icon" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/84/OKEx_logo.svg');"></div>
-        Đăng kí sàn OKX <span class="menu">⋮</span>
-    </a>
-
-    <a class="link" href="#" target="_blank" style="background-color: #fdbf00;">
-        <div class="app-icon" style="background-image: url('https://cryptologos.cc/logos/bybit-bybit-logo.png');"></div>
-        Đăng kí sàn Bybit <span class="menu">⋮</span>
-    </a>
-
-    <a class="link" href="#" target="_blank" style="background-color: #f0b90b;">
-        <div class="app-icon" style="background-image: url('https://cryptologos.cc/logos/bitget-bitget-logo.png');"></div>
-        Đăng kí sàn Bitget <span class="menu">⋮</span>
-    </a>
-
-    <a class="link" href="#" target="_blank" style="background-color: #1f1f1f;">
-        <div class="group-avatar" style="background-image: url('https://i.postimg.cc/Y09647gV/unnamed-1.png');"></div>
-        Nhóm ae Ckrypto <span class="menu">⋮</span>
-    </a>
-</div>
-
+    <div class="link-container">
+        <a class="link" href="#" target="_blank">
+            <div class="app-icon" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg');"></div>
+            tài khoản Telegram chính chủ <span class="menu">⋮</span>
+        </a>
+        <a class="link" href="#" target="_blank">
+            <div class="app-icon" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png');"></div>
+            YouTube <span class="menu">⋮</span>
+        </a>
+        <a class="link" href="#" target="_blank">
+            <div class="app-icon" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a9/TikTok_logo.svg');"></div>
+            Tài khoản TikTok <span class="menu">⋮</span>
+        </a>
+        <a class="link" href="#" target="_blank">
+            <div class="app-icon" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023.svg');"></div>
+            Tài khoản X của mình <span class="menu">⋮</span>
+        </a>
+        <a class="link" href="#" target="_blank">
+            <div class="app-icon" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/84/OKEx_logo.svg');"></div>
+            Đăng kí sàn OKX <span class="menu">⋮</span>
+        </a>
+        <a class="link" href="#" target="_blank">
+            <div class="app-icon" style="background-image: url('https://cryptologos.cc/logos/bybit-bybit-logo.png');"></div>
+            Đăng kí sàn Bybit <span class="menu">⋮</span>
+        </a>
+        <a class="link" href="#" target="_blank">
+            <div class="app-icon" style="background-image: url('https://cryptologos.cc/logos/bitget-bitget-logo.png');"></div>
+            Đăng kí sàn Bitget <span class="menu">⋮</span>
+        </a>
+        <a class="link" href="#" target="_blank">
+            <div class="group-avatar" style="background-image: url('https://i.postimg.cc/Y09647gV/unnamed-1.png');"></div>
+            Nhóm ae Ckrypto <span class="menu">⋮</span>
+        </a>
+    </div>
 
     <footer>
         &copy; 2025 thanhckrypto
