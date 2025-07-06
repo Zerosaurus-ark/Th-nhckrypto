@@ -56,10 +56,44 @@
             text-decoration: none;
             color: white;
             font-size: 18px;
-            transition: background-color 0.3s;
+            transition: all 0.3s ease;
+            position: relative;
         }
 
         .link:hover {
+            background-color: #333;
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            filter: brightness(1.2);
+        }
+
+        .menu {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 20px;
+            color: #aaa;
+        }
+
+        .share-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #1f1f1f;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: background-color 0.3s;
+        }
+
+        .share-button:hover {
             background-color: #333;
         }
 
@@ -73,25 +107,42 @@
 </head>
 <body>
 
+    <button class="share-button" onclick="sharePage()">...</button>
+
     <div class="avatar" style="background-image: url('https://via.placeholder.com/120');"></div>
 
     <h1>thanhckrypto</h1>
     <p>Chia sẻ crypto, cày sự kiện, kiếm tiền cùng nhau!</p>
 
     <div class="link-container">
-        <a class="link" href="#" target="_blank">Telegram</a>
-        <a class="link" href="#" target="_blank">YouTube</a>
-        <a class="link" href="#" target="_blank">TikTok</a>
-        <a class="link" href="#" target="_blank">Twitter</a>
-        <a class="link" href="#" target="_blank">OKX</a>
-        <a class="link" href="#" target="_blank">Bybit</a>
-        <a class="link" href="#" target="_blank">Spot Trading Link</a>
-        <a class="link" href="#" target="_blank">Futures Trading Link</a>
+        <a class="link" href="#" target="_blank">Telegram <span class="menu">⋮</span></a>
+        <a class="link" href="#" target="_blank">YouTube <span class="menu">⋮</span></a>
+        <a class="link" href="#" target="_blank">TikTok <span class="menu">⋮</span></a>
+        <a class="link" href="#" target="_blank">Twitter <span class="menu">⋮</span></a>
+        <a class="link" href="#" target="_blank">OKX <span class="menu">⋮</span></a>
+        <a class="link" href="#" target="_blank">Bybit <span class="menu">⋮</span></a>
+        <a class="link" href="#" target="_blank">Spot Trading Link <span class="menu">⋮</span></a>
+        <a class="link" href="#" target="_blank">Futures Trading Link <span class="menu">⋮</span></a>
     </div>
 
     <footer>
         &copy; 2025 thanhckrypto
     </footer>
+
+    <script>
+        function sharePage() {
+            if (navigator.share) {
+                navigator.share({
+                    title: 'thanhckrypto',
+                    url: window.location.href
+                }).then(() => {
+                    console.log('Thanks for sharing!');
+                }).catch(console.error);
+            } else {
+                alert('Tính năng chia sẻ không được hỗ trợ trên trình duyệt này.');
+            }
+        }
+    </script>
 
 </body>
 </html>
