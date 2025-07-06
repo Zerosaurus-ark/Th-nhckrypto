@@ -57,6 +57,10 @@
             font-size: 18px;
             transition: all 0.3s ease;
             position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
         }
 
         .link:nth-child(1) { background-color: #0088cc; } /* Telegram */
@@ -66,7 +70,7 @@
         .link:nth-child(5) { background-color: #000000; } /* OKX */
         .link:nth-child(6) { background-color: #fdbf00; } /* Bybit */
         .link:nth-child(7) { background-color: #f0b90b; } /* Bitget */
-        .link:nth-child(8) { background-color: #1f1f1f; display: flex; align-items: center; justify-content: center; gap: 10px; } /* Group */
+        .link:nth-child(8) { background-color: #1f1f1f; } /* Group */
 
         .link:hover {
             transform: translateY(-5px);
@@ -82,6 +86,14 @@
             cursor: pointer;
             font-size: 20px;
             color: #aaa;
+        }
+
+        .app-icon {
+            width: 30px;
+            height: 30px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 5px;
         }
 
         .group-avatar {
@@ -130,17 +142,37 @@
     <p>Chia sẻ crypto, cày sự kiện, kiếm tiền cùng nhau!</p>
 
     <div class="link-container">
-        <a class="link" href="#" target="_blank">tài khoản Telegram chính chủ <span class="menu">⋮</span></a>
-        <a class="link" href="#" target="_blank">YouTube <span class="menu">⋮</span></a>
-        <a class="link" href="#" target="_blank">Tài khoản TikTok <span class="menu">⋮</span></a>
-        <a class="link" href="#" target="_blank">Tài khoản X của mình <span class="menu">⋮</span></a>
-        <a class="link" href="#" target="_blank">Đăng kí sàn OKX <span class="menu">⋮</span></a>
-        <a class="link" href="#" target="_blank">Đăng kí sàn Bybit <span class="menu">⋮</span></a>
-        <a class="link" href="#" target="_blank">Đăng kí sàn bitget <span class="menu">⋮</span></a>
         <a class="link" href="#" target="_blank">
-            Nhóm ae Ckrypto
+            <div class="app-icon" style="background-image: url('/mnt/data/4d890fa7-dd6c-4290-bc31-99f513c38ac4.png');"></div>
+            tài khoản Telegram chính chủ <span class="menu">⋮</span>
+        </a>
+        <a class="link" href="#" target="_blank">
+            <div class="app-icon" style="background-image: url('/mnt/data/4d890fa7-dd6c-4290-bc31-99f513c38ac4.png');"></div>
+            YouTube <span class="menu">⋮</span>
+        </a>
+        <a class="link" href="#" target="_blank">
+            <div class="app-icon" style="background-image: url('/mnt/data/4d890fa7-dd6c-4290-bc31-99f513c38ac4.png');"></div>
+            Tài khoản TikTok <span class="menu">⋮</span>
+        </a>
+        <a class="link" href="#" target="_blank">
+            <div class="app-icon" style="background-image: url('/mnt/data/4d890fa7-dd6c-4290-bc31-99f513c38ac4.png');"></div>
+            Tài khoản X của mình <span class="menu">⋮</span>
+        </a>
+        <a class="link" href="#" target="_blank">
+            <div class="app-icon" style="background-image: url('/mnt/data/4d890fa7-dd6c-4290-bc31-99f513c38ac4.png');"></div>
+            Đăng kí sàn OKX <span class="menu">⋮</span>
+        </a>
+        <a class="link" href="#" target="_blank">
+            <div class="app-icon" style="background-image: url('/mnt/data/4d890fa7-dd6c-4290-bc31-99f513c38ac4.png');"></div>
+            Đăng kí sàn Bybit <span class="menu">⋮</span>
+        </a>
+        <a class="link" href="#" target="_blank">
+            <div class="app-icon" style="background-image: url('/mnt/data/4d890fa7-dd6c-4290-bc31-99f513c38ac4.png');"></div>
+            Đăng kí sàn bitget <span class="menu">⋮</span>
+        </a>
+        <a class="link" href="#" target="_blank">
             <div class="group-avatar" style="background-image: url('https://i.postimg.cc/Y09647gV/unnamed-1.png');"></div>
-            <span class="menu">⋮</span>
+            Nhóm ae Ckrypto <span class="menu">⋮</span>
         </a>
     </div>
 
@@ -165,4 +197,3 @@
 
 </body>
 </html>
-
